@@ -1,0 +1,414 @@
+//colors
+$white: #fff;
+$color_persian_green_approx: #02abab;
+$color_blue_bayoux_approx: #506081;
+$black: #000;
+$color_tapa_approx: #777;
+$color_suva_gray_approx: #888;
+$color_sweet_corn_approx: #CB76A1;
+$color_anakiwa_approx: #76B7CB;
+$color_sundown_approx: #CACB76;
+
+//urls
+$memory_white: url(/assets/images/memory-white.png);
+$cpu_white: url(/assets/images/cpu-white.png);
+$rds_white: url(/assets/images/rds-white.png);
+$config_white: url(/assets/images/config-white.png);
+$about_white: url(/assets/images/about-white.png);
+$memory_blue: url(/assets/images/memory-blue.png);
+$cpu_blue: url(/assets/images/cpu-blue.png);
+$rds_blue: url(/assets/images/rds-blue.png);
+$config_blue: url(/assets/images/config-blue.png);
+$about_blue: url(/assets/images/about-blue.png);
+
+body {
+  background-color: $white;
+  font-size: 13px;
+}
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #f5f5f5;
+}
+
+.navbar {
+  margin-bottom: 0;
+  background-color: $white;
+  border: none;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 0;
+  border-bottom: 5px solid $color_persian_green_approx;
+}
+
+.navbar-default {
+  a.navbar-brand {
+    color: $color_blue_bayoux_approx;
+    &:hover {
+      color: $color_blue_bayoux_approx;
+    }
+    &:focus {
+      color: $color_blue_bayoux_approx;
+    }
+  }
+  .navbar-nav > li {
+    > a {
+      color: $color_blue_bayoux_approx;
+      background-color: transparent;
+      text-align: center;
+      span {
+        display: block;
+      }
+      &:hover {
+        color: $white;
+        background-color: $color_persian_green_approx;
+        .memory {
+          background-image: $memory_white;
+        }
+        .cpu {
+          background-image: $cpu_white;
+        }
+        .rds {
+          background-image: $rds_white;
+        }
+        .config {
+          background-image: $config_white;
+        }
+        .about {
+          background-image: $about_white;
+        }
+      }
+      &:focus {
+        color: $white;
+        background-color: $color_persian_green_approx;
+        .memory {
+          background-image: $memory_white;
+        }
+        .cpu {
+          background-image: $cpu_white;
+        }
+        .rds {
+          background-image: $rds_white;
+        }
+        .config {
+          background-image: $config_white;
+        }
+        .about {
+          background-image: $about_white;
+        }
+      }
+    }
+    &.active > a {
+      color: $white;
+      background-color: $color_persian_green_approx;
+      .memory {
+        background-image: $memory_white;
+        background-size: 100% 100%;
+      }
+      .cpu {
+        background-image: $cpu_white;
+        background-size: 100% 100%;
+      }
+      .rds {
+        background-image: $rds_white;
+        background-size: 100% 100%;
+      }
+      .config {
+        background-image: $config_white;
+        background-size: 100% 100%;
+      }
+      .about {
+        background-image: $about_white;
+        background-size: 100% 100%;
+      }
+      &:hover {
+        color: $white;
+        background-color: $color_persian_green_approx;
+        .memory {
+          background-image: $memory_white;
+          background-size: 100% 100%;
+        }
+        .cpu {
+          background-image: $cpu_white;
+          background-size: 100% 100%;
+        }
+        .rds {
+          background-image: $rds_white;
+          background-size: 100% 100%;
+        }
+        .config {
+          background-image: $config_white;
+          background-size: 100% 100%;
+        }
+        .about {
+          background-image: $about_white;
+          background-size: 100% 100%;
+        }
+      }
+      &:focus {
+        color: $white;
+        background-color: $color_persian_green_approx;
+        .memory {
+          background-image: $memory_white;
+          background-size: 100% 100%;
+        }
+        .cpu {
+          background-image: $cpu_white;
+          background-size: 100% 100%;
+        }
+        .rds {
+          background-image: $rds_white;
+          background-size: 100% 100%;
+        }
+        .config {
+          background-image: $config_white;
+          background-size: 100% 100%;
+        }
+        .about {
+          background-image: $about_white;
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+}
+
+.mainicon-bg {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+
+.memory {
+  background-image: $memory_blue;
+  background-size: 100% 100%;
+}
+
+.cpu {
+  background-image: $cpu_blue;
+  background-size: 100% 100%;
+}
+
+.rds {
+  background-image: $rds_blue;
+  background-size: 100% 100%;
+}
+
+.config {
+  background-image: $config_blue;
+  background-size: 100% 100%;
+}
+
+.about {
+  background-image: $about_blue;
+  background-size: 100% 100%;
+}
+
+@media(min-width: 768px) {
+  .navbar-header {
+    margin-left: 20px !important;
+    margin-top: 10px;
+  }
+  .navbar-nav > li > a {
+    padding: 10px 25px;
+  }
+  .nav > li > a > img {
+    display: block;
+    margin: 0 auto;
+  }
+  .navbar-default .navbar-brand {
+    font-size: 22px;
+    color: $white;
+  }
+}
+
+.tabs-container {
+  padding-top: 10px;
+}
+
+.page-description {
+  color: $black;
+  margin-bottom: 15px;
+  h3 {
+    margin: 25px;
+  }
+}
+
+.main-module {
+  padding: 10px 20px;
+  margin: 0 auto;
+  max-width: 1344px;
+  background-color: $white;
+  > h3 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  p.description {
+    margin: 0 55px;
+    max-width: 1344px;
+    color: $black;
+    background-color: $white;
+    padding: 10px 36px;
+  }
+}
+
+.description-container {
+  margin: 0 55px;
+  color: $black;
+  background-color: $white;
+  padding: 10px 34px;
+}
+
+.charts-container {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  h3 {
+    margin-top: 5px;
+  }
+  small {
+    display: block;
+    color: $color_tapa_approx;
+    margin-bottom: 3px;
+    padding-left: 10px;
+  }
+  .chart-wrapper {
+    .chart-head {
+      color: $black;
+      padding: 10px;
+      width: 100%;
+      clear: both;
+      img {
+        width: 100%;
+      }
+      .dropdown > a {
+        &:hover {
+          color: $black;
+        }
+        &:focus {
+          color: $black;
+        }
+      }
+    }
+    .chart-body {
+      padding: 5px 10px;
+      width: 100%;
+      clear: both;
+    }
+  }
+}
+
+.chart-heading {
+  color: $black;
+  font-size: 16px;
+  padding: 5px 10px 0;
+  margin-bottom: 3px;
+  margin-top: 5px;
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.chart-info {
+  width: 100%;
+  float: left;
+  color: $black;
+}
+
+.chart-header {
+  border: 1px solid #82a8d0;
+  border-bottom: 0;
+  margin: 0px;
+  padding: 5px;
+  background-color: #daeef3;
+}
+
+.chart-content {
+  background-color: $white;
+  clear: both;
+  border: 1px solid #82a8d0;
+}
+
+.chart-body {
+  img {
+    width: 100%;
+    height: 130px;
+  }
+  p {
+    color: $black;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}
+
+footer {
+  background-color: $white;
+  padding: 10px;
+  margin: 20px 0;
+  p {
+    color: $black;
+    margin-bottom: 5px;
+  }
+  img {
+    margin-bottom: 10px;
+  }
+}
+
+.table {
+  margin-top: 10px;
+}
+
+.legends {
+  text-align: right;
+  > li {
+    color: $color_suva_gray_approx;
+    > span {
+      display: inline-block;
+      //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+      border-radius: 100%;
+      width: 12px;
+      height: 12px;
+      margin: 0 10px;
+    }
+  }
+}
+
+span {
+  &.azure {
+    background-color: $color_sweet_corn_approx;
+  }
+  &.aws {
+    background-color: $color_anakiwa_approx;
+  }
+  &.aliyun {
+    background-color: $color_sundown_approx;
+  }
+}
+
+.chart-head .list-inline {
+  margin-bottom: 0;
+}
+
+.table-blue tr {
+  > td {
+    font-weight: normal;
+    text-align: center;
+    padding: 30px;
+  }
+  > th {
+    text-align: center;
+    padding: 30px;
+  }
+}
+
+.dashboardChart {
+  height: 200px;
+  width: 350px;
+}
+
+.descriptionFooter {
+  background-color: #daeef3;
+}
+
+// injector
+// endinjector
