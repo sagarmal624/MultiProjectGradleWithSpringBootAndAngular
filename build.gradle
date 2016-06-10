@@ -11,10 +11,6 @@ buildscript {
 }
 subprojects {
     //Put instructions for each sub project
-    apply plugin: "java"
-    repositories {
-        mavenCentral()
-    }
 }
 allprojects {
     //Put instructions for all projects
